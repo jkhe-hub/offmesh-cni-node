@@ -1,0 +1,1 @@
+go build -ldflags="-X github.com/dapr/dapr/pkg/version.gitcommit=14a2ea47160d5de193ff2789d09b0c6551a1527a -X github.com/dapr/dapr/pkg/version.gitversion=v1.9.5-16-g14a2ea4-dirty -X github.com/dapr/dapr/pkg/version.version=edge -X github.com/dapr/kit/logger.DaprVersion=edge -s -w" -o ~/dapr/dist/linux_amd64/release/cni-node 

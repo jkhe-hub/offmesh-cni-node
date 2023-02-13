@@ -1,9 +1,10 @@
 package main
 
 import (
-	"offmesh-cni-node/offmesh"
+	"github.com/jkhe-hub/offmesh-cni-node/offmesh"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/client-go/tools/cache"
+	"github.com/dapr/dapr/pkg/injector/sidecar"
 	"log"
 )
 

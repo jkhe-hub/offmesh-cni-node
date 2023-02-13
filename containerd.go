@@ -1,8 +1,10 @@
 package main
 
 import (
-	"k8s.io/kubernetes/pkg/kubelet/cri/remote"
+	"context"
 	"time"
+	"k8s.io/kubernetes/pkg/kubelet/cri/remote"
+	"log"
 )
 
 const (
@@ -18,9 +20,10 @@ func GetContainerPIDByID(id string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	status, err := service.ContainerStatus(id, true)
+	status, err := service.ContainerStatus(context.TODO(), id, true)
 	if err != nil {
 		return "", err
 	}
+	log.Printf("GetContainerPIDByID ctr info: %v", status.Info)
 	return status.Info[PID], nil
 }

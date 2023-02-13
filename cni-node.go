@@ -1,7 +1,7 @@
 package main
 
 import (
-	"offmesh-cni-node/offmesh"
+	"github.com/jkhe-hub/offmesh-cni-node/offmesh"
 	"github.com/dapr/dapr/utils"
 	"github.com/eapache/queue"
 	"k8s.io/client-go/informers"

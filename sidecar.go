@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"offmesh-cni-node/offmesh"
+	"github.com/jkhe-hub/offmesh-cni-node/offmesh"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"log"
