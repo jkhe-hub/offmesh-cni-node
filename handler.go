@@ -1,4 +1,4 @@
-package main
+package offmesh_cni_node
 
 import (
 	"github.com/jkhe-hub/offmesh-cni-node/offmesh"
